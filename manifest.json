@@ -1,0 +1,19 @@
+{
+  "short_name": "Open Access Manifesto",
+  "name": "Open Access Manifesto by Aaron Swartz",
+  "background_color": "#001628",
+  "theme_color": "#293030",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "/public/images/icons/icon-face-24px.svg",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "/public/images/icons/icon-face-24px.svg",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ]
+}
