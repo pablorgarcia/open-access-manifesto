@@ -12,8 +12,8 @@ const en = [
   'With enough of us, around the world, we\'ll not just send a strong message opposing the privatization of knowledge — we\'ll make it a thing of the past. Will you join us?',
   'Aaron Swartz',
   'July 2008, Eremo, Italy'
-];
-
+  ];
+  
 const es = [
   'La información es poder. Pero como todo poder, hay quienes quieren quedarse con él. Todo el patrimonio cultural y científico del mundo, publicado durante siglos en libros y diarios, continúa siendo digitalizado y guardado por un puñado de corporaciones privadas. ¿Quieres leer publicaciones acerca de los más famosos resultados de la ciencia? Necesitarás enviar grandes cantidades a editoriales como Reed Elsevier.',
   'Existen personas luchando para cambiar esto. El Movimiento para el Acceso Abierto ha luchado valientemente para asegurar que los científicos no firmen derechos de autor y en cambio se aseguren que su trabajo sea publicado en Internet, bajo términos que permitan que cualquier persona tenga acceso a este. Pero incluso en el mejor de los casos, su lucha solamente aplicará para cosas que se publiquen en el futuro. El resto, lo publicado hasta ahora, se habrá perdido.',
@@ -31,3 +31,4 @@ const es = [
   'Julio de 2008, Eremo, Italia'
 ];
 
+  
