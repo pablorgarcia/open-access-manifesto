@@ -1,4 +1,4 @@
-const en = [
+const enLang = [
   'Information is power. But like all power, there are those who want to keep it for themselves. The world\'s entire scientific and cultural heritage, published over centuries in books and journals, is increasingly being digitized and locked up by a handful of private corporations. Want to read the papers featuring the most famous results of the sciences? You\'ll need to send enormous amounts to publishers like Reed Elsevier.',
   'There are those struggling to change this. The Open Access Movement has fought valiantly to ensure that scientists do not sign their copyrights away but instead ensure their work is published on the Internet, under terms that allow anyone to access it. But even under the best scenarios, their work will only apply to things published in the future. Everything up until now will have been lost.',
   'That is too high a price to pay. Forcing academics to pay money to read the work of their colleagues? Scanning entire libraries but only allowing the folks at Google to read them?  Providing scientific articles to those at elite universities in the First World, but not to children in the Global South? It\'s outrageous and unacceptable.',
@@ -12,9 +12,9 @@ const en = [
   'With enough of us, around the world, we\'ll not just send a strong message opposing the privatization of knowledge — we\'ll make it a thing of the past. Will you join us?',
   'Aaron Swartz',
   'July 2008, Eremo, Italy'
-];
-
-const es = [
+  ];
+  
+const esLang = [
   'La información es poder. Pero como todo poder, hay quienes quieren quedarse con él. Todo el patrimonio cultural y científico del mundo, publicado durante siglos en libros y diarios, continúa siendo digitalizado y guardado por un puñado de corporaciones privadas. ¿Quieres leer publicaciones acerca de los más famosos resultados de la ciencia? Necesitarás enviar grandes cantidades a editoriales como Reed Elsevier.',
   'Existen personas luchando para cambiar esto. El Movimiento para el Acceso Abierto ha luchado valientemente para asegurar que los científicos no firmen derechos de autor y en cambio se aseguren que su trabajo sea publicado en Internet, bajo términos que permitan que cualquier persona tenga acceso a este. Pero incluso en el mejor de los casos, su lucha solamente aplicará para cosas que se publiquen en el futuro. El resto, lo publicado hasta ahora, se habrá perdido.',
   'Este es un precio demasiado alto para pagar. ¿Obligar a que académicos paguen dinero para leer el trabajo de sus colegas? ¿Digitalizar bibliotecas enteras pero solo permitir que la gente en Google las pueda leer? ¿Proveer artículos científicos a aquellos en las élites universitarias del primer mundo, pero no a niños en el sur del planeta? Es indignante e inaceptable.',
@@ -31,3 +31,11 @@ const es = [
   'Julio de 2008, Eremo, Italia'
 ];
 
+const availableLangs = {
+  'en': ['mclaren', 'ingles'], 
+  'es-ES': ['primer parrafo de español', 'segundo', 'texto que viene del español'],
+  'fr': ['renault', 'frrr'],
+  'it': ['ferrari', 'ita']
+};
+
+  
