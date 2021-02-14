@@ -1,4 +1,10 @@
 
+
+body {
+  background-color: #202020;
+  color: white;
+}
+
 .markdown-body ul ol {
   list-style-type: lower-roman;
 }
