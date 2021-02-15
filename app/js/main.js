@@ -1,3 +1,7 @@
+/*
+  - Ordenar el Select Option alfabeticamente
+  - Mostrar los videos en el idioma del usuario, si está disponible
+*/
 
 let matchLang = availableLangs.en;
 let newTranslation = availableLangs.en[1];
@@ -16,11 +20,9 @@ if (navigator.language != 'en') {
     readyToTranslation = true;
   } else {
     console.log('Has not found lang for user');
-    // Ponemos la OPCION en INGLES por defecto: optionSelectDefault
   }
 } else {
   console.log('User use English lang by default');
-  // Ponemos la OPCION en INGLES por defecto: optionSelectDefault
 }
 
 // Creating a new P element
@@ -49,9 +51,7 @@ const onSetLang = () => {
   // Adding the new P elements on DOM with the correct translation
   for (let i = 0; i < newTranslation.length; i++) { newPElement(newTranslation[i], mainEl) }
   // Changing DOM HTML lang attribute for the user one
-  console.log(matchLang, newTranslation)
   document.getElementsByTagName('html')[0].lang = matchLang;
-  console.log('onSet', matchLang)
 };
 
 // If we change the language from the select input
