@@ -32,10 +32,22 @@ const esLang = [
 ];
 
 const availableLangs = {
-  'en': ['English', 'mclaren', 'ingles'], 
-  'es-ES': ['Español', 'primer parrafo de español', 'segundo', 'texto que viene del español'],
-  'fr': ['France', 'renault', 'frrr'],
-  'it': ['Italiano', 'ferrari', 'ita']
+  'en': [
+    'English', 
+    ['mclaren', 'j.Steward']
+  ], 
+  'es-ES': [
+    'Español', 
+    ['primer parrafo de español', 'segundo', 'TERCERO Y ULTIMO en español']
+  ],
+  'fr': [
+    'France', 
+    ['renault', 'frrr']
+  ],
+  'it': [
+    'Italiano', 
+    ['ferrari', 'ita']
+  ]
 };
 
 const langCodes = {
