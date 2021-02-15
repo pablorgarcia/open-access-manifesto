@@ -49,12 +49,15 @@ const onSetLang = () => {
   // Adding the new P elements on DOM with the correct translation
   for (let i = 0; i < newTranslation.length; i++) { newPElement(newTranslation[i], mainEl) }
   // Changing DOM HTML lang attribute for the user one
+  console.log(matchLang, newTranslation)
   document.getElementsByTagName('html')[0].lang = matchLang;
+  console.log('onSet', matchLang)
 };
 
 // If we change the language from the select input
 const onChangeLang = (newLang) => {
   if(newLang != undefined) {
+    matchLang = newLang;
     newTranslation = availableLangs[newLang][1];
     onSetLang();
   }
