@@ -1,13 +1,10 @@
-/*
-  - Desde el principio, que esté seleccionado el lenguaje actual ene le select option input
-*/
 
-let matchLang = [];
+let matchLang = availableLangs.en;
 let newTranslation = availableLangs.en[1];
 let readyToTranslation = false;
 let optionSelectDefault = availableLangs.en[0];
 
-// Idioma por defecto
+// User default browser language
 if (navigator.language != 'en') {
   console.log('User has not use English lang');
   // Finding the user language with the locals translations
@@ -15,8 +12,8 @@ if (navigator.language != 'en') {
   // If find some result, add it to new translation and change the ready status to true
   if (matchLang.length > 0) {
     newTranslation = availableLangs[matchLang][1];
+    optionSelectDefault = Object.keys(availableLangs[matchLang]);
     readyToTranslation = true;
-    // Ponemos la OPCION en el idioma del usuario: optionSelectDefault
   } else {
     console.log('Has not found lang for user');
     // Ponemos la OPCION en INGLES por defecto: optionSelectDefault
@@ -41,6 +38,7 @@ const newOptionElement = (textToInnerHTML, elementFather, valueToInnerHTML) => {
   elementFather.appendChild(optionEl);
   optionEl.appendChild(contentText);
   optionEl.value = valueToInnerHTML;
+  if (valueToInnerHTML === matchLang.toString()) { optionEl.selected = true }
 };
 
 const onSetLang = () => {
@@ -68,19 +66,10 @@ document.addEventListener('DOMContentLoaded', () => {
   if (readyToTranslation) { onSetLang() } 
   else { console.log('Has not found lang for user') }
 
-/*
-Creamos las opciones del select con los idiomas disponibles que tengamos
-llamamos a una funcion constructora de elementos con la opcion seleccionada
-*/
   const selectEl = document.getElementById('selectLanguage');
-
   for (let i = 0; i < Object.keys(availableLangs).length; i++) {
+    // Creating the select options with the available languages
     newOptionElement(Object.values(availableLangs)[i][0], selectEl, Object.keys(availableLangs)[i]);
   }
-  /*
-  https://stackoverflow.com/questions/4590311/set-option-selected-attribute-from-dynamic-created-option/4590581
-  var country = document.getElementById("country");
-  country.options[country.options.selectedIndex].selected = true;
- */
 
 });
