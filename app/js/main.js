@@ -9,8 +9,8 @@ let optionSelectDefault = langs.en[0];
 
 // User default browser language
 if (navigator.language != 'en') {
-  console.log('User has not use English lang');
   // Finding the user language with the locals translations
+  // console.log('User has not use English lang');
   matchLang = Object.keys(langs).filter(lang => lang === navigator.language);
   // If find some result, add it to new translation and change the ready status to true
   if (matchLang.length > 0) {
