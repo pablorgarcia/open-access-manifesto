@@ -1,4 +1,3 @@
-
 const availableLangs = {
   'en': [
     'English', 
@@ -92,6 +91,15 @@ const availableLangs = {
   ]
 };
 
+// ordering languages alphabetically
+let langs = Object.keys(availableLangs).sort().reduce(
+  (obj, key) => {
+    obj[key] = availableLangs[key];
+    return obj;
+  }, {}
+);
+
+/*
 const langCodes = {
   "af":    "Afrikaans",
   "sq":    "Albanian",
@@ -293,4 +301,4 @@ const langCodes = {
   "ji":    "Yiddish",
   "zu":    "Zulu",
 };
-  
+*/

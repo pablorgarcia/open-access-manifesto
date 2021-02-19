@@ -1,22 +1,21 @@
 /*
-  - Ordenar el Select Option alfabeticamente
   - Mostrar los videos en el idioma del usuario, si está disponible
 */
 
-let matchLang = availableLangs.en;
-let newTranslation = availableLangs.en[1];
+let matchLang = langs.en;
+let newTranslation = langs.en[1];
 let readyToTranslation = false;
-let optionSelectDefault = availableLangs.en[0];
+let optionSelectDefault = langs.en[0];
 
 // User default browser language
 if (navigator.language != 'en') {
   console.log('User has not use English lang');
   // Finding the user language with the locals translations
-  matchLang = Object.keys(availableLangs).filter(lang => lang === navigator.language);
+  matchLang = Object.keys(langs).filter(lang => lang === navigator.language);
   // If find some result, add it to new translation and change the ready status to true
   if (matchLang.length > 0) {
-    newTranslation = availableLangs[matchLang][1];
-    optionSelectDefault = Object.keys(availableLangs[matchLang]);
+    newTranslation = langs[matchLang][1];
+    optionSelectDefault = Object.keys(langs[matchLang]);
     readyToTranslation = true;
   } else {
     console.log('Has not found lang for user');
@@ -58,21 +57,19 @@ const onSetLang = () => {
 const onChangeLang = (newLang) => {
   if(newLang != undefined) {
     matchLang = newLang;
-    newTranslation = availableLangs[newLang][1];
+    newTranslation = langs[newLang][1];
     onSetLang();
   }
 };
 
 // When DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
-
   if (readyToTranslation) { onSetLang() } 
   else { console.log('Has not found lang for user') }
 
   const selectEl = document.getElementById('selectLanguage');
-  for (let i = 0; i < Object.keys(availableLangs).length; i++) {
+  for (let i = 0; i < Object.keys(langs).length; i++) {
     // Creating the select options with the available languages
-    newOptionElement(Object.values(availableLangs)[i][0], selectEl, Object.keys(availableLangs)[i]);
+    newOptionElement(Object.values(langs)[i][0], selectEl, Object.keys(langs)[i]);
   }
-
 });
