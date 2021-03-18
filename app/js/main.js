@@ -2,10 +2,10 @@
   - Mostrar los videos en el idioma del usuario, si está disponible
 */
 
-let matchLang = langs.en;
-let newTranslation = langs.en[1];
 let readyToTranslation = false;
+let matchLang = langs.en;
 let optionSelectDefault = langs.en[0];
+let newTranslation = langs.en[1];
 
 // User default browser language
 if (navigator.language != 'en') {

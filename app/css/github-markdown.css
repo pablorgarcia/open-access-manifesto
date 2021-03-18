@@ -1,10 +1,22 @@
-
 /*
 body {
   background-color: #202020;
   color: white;
 }
 */
+
+select {
+  padding: .25em;
+  border: 1px solid #eaecef;
+}
+
+select:hover {
+  background-color: lightyellow;
+}
+
+iframe {
+  width: 100%;
+}
 
 .select-language {
   display: flex;
