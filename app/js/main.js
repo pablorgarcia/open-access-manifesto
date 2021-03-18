@@ -73,3 +73,8 @@ document.addEventListener('DOMContentLoaded', () => {
     newOptionElement(Object.values(langs)[i][0], selectEl, Object.keys(langs)[i]);
   }
 });
+
+
+console.log('%cHELLO PARTNET', 'font-size: 15px; color: #395E31;');
+console.log('%cFeel free to fork it on https://github.com/pablorgarcia/open-access-manifesto', 'font-size: 13px; color: #1485CC; text-shadow: 1px 0 1px #08324D;');
+console.log('👋😄');
